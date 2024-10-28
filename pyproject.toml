@@ -10,7 +10,15 @@ package-mode = false
 python = "^3.12"
 datasets = "^3.0.2"
 tokenizers = "^0.20.1"
-transformers = "^4.45.2"
+transformers = {extras = ["torch"], version = "^4.46.0"}
+ipykernel = "^6.29.5"
+torch = "^2.5.0"
+evaluate = "^0.4.3"
+seqeval = "^1.2.2"
+torchinfo = "^1.8.0"
+peft = {git = "https://github.com/huggingface/peft"}
+clearml = "^1.16.4"
+python-dotenv = "^1.0.1"
 
 
 [build-system]
